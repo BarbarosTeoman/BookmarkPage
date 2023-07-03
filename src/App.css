@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+/*1050px*/
+:root {
+  --softBlue: hsl(231, 69%, 60%);
+  --softRed: hsl(0, 94%, 66%);
+  --grayishBlue: hsl(229, 8%, 60%);
+  --veryDarkBlue: hsl(229, 31%, 21%);
+
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Rubik;
+}
+
+.main {
+  height: 100px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.elipse {
+  width: min(90%, 40vw);
+  background-color: var(--softBlue);
+  height: min(15rem, 20vw);
+  z-index: -1;
+}
+
+p {
+  font-size: min(1.1rem, 3vw);
+  line-height: 1.5rem; 
+  color: var(--grayishBlue);
+}
+
+/*-------HEADER-------*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+  margin: 0 10%;
+}
+
+.header a {
+  cursor: pointer;
+}
+
+.headerList {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 400px;
+  align-items: center;
+  color: var(--grayishBlue);
+  font-size: 14px;
+}
+
+.headerList li:hover {
+  cursor: pointer;
+  color: var(--softRed);
+}
+
+
+.headerList button {
+  background-color: var(--softRed);
+  border: 2px solid var(--softRed);
+  outline: none;
+  padding: 0.6rem 2.1rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.headerList button:hover {
+  background-color: white;
+  color: var(--softRed);
+}
+
+/*-------DESCRIPTION-------*/
+
+.description {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  height: 100%;
+}
+
+.descriptionLeft {
+  width: 50%;
+  padding-right: 5%;
+  padding-left: max(5%, 10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionLeft h1 {
+  font-size: min(2rem, 4vw);
+  color: var(--veryDarkBlue);
+  margin-bottom: 1rem;
+}
+
+.descriptionLeft p {
+  margin-bottom: 2rem;
+}
+
+.descriptionLeft button {
+  width: max(110px,30%);
+  height: 2.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.descriptionLeft button:first-child {
+  margin-right: 20px;
+  background-color: var(--softBlue);
+  color: white;
+}
+
+.descriptionLeft button:first-child:hover {
+  background-color: white;
+  color: var(--softBlue);
+  border: 2px solid var(--softBlue);
+}
+
+.descriptionLeft button:last-child {
+  background-color: hsl(229, 8%, 90%);
+  color: var(--veryDarkBlue);
+}
+
+.descriptionLeft button:last-child:hover {
+  background-color: white;
+  border: 2px solid var(--veryDarkBlue);
+}
+
+.descriptionRight {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionRight img {
+  align-self: flex-start;
+  width: min(80%, 600px);
+  min-width: 300px;
+}
+
+.description .elipse {
+  position: absolute;
+  bottom: -50px;
+  border-radius: 150px 0 0 150px;
+  right: 0;
+}
+
+
+/*-------FEATURES-------*/
+
+.featuresMain {
+  width: 100%;
+  height: 500px;
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features {
+  width: 60%;
+}
+
+.features h1 {
+  color: var(--veryDarkBlue);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.features p {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 3rem;
+}
+
+.tabHeadings {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.tabHeading {
+  width: 200px;
+  text-align: center;
+  color: var(--grayishBlue);
+  position: relative;
+}
+
+.tabHeadings::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.5px;
+  background-color: var(--grayishBlue);
+  bottom: -20px;
+  left: 0;
+}
+
+.active {
+  color: var(--veryDarkBlue);
+  font-weight: 500;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: var(--softRed);
+  bottom: -22.5px;
+  left: 0;
+  z-index: 1;
+}
+
+.tabHeading:hover {
+  cursor: pointer;
+  color: var(--veryDarkBlue);
+}
+
+/*----------TABS-----------*/
+
+.tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  height: 100%;
+}
+
+.tabsLeft {
+  width: 50%;
+  padding-left: 5%;
+  padding-right: max(5%, 10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.tabsLeft h1 {
+  font-size: min(2rem, 4vw);
+  color: var(--veryDarkBlue);
+  margin-bottom: 1rem;
+}
+
+.tabsLeft p {
+  margin-bottom: 2rem;
+}
+
+.tabsLeft button {
+  width: max(110px,30%);
+  height: 2.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: var(--softBlue);
+  color: white;
+}
+
+.tabsLeft button:hover {
+  background-color: white;
+  color: var(--softBlue);
+  border: 2px solid var(--softBlue);
+}
+
+.tabsRight {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabsRight img {
+  align-self: flex-end;
+  width: min(80%, 550px);
+  min-width: 300px;
+}
+
+.tabs .elipse {
+  position: absolute;
+  bottom: -50px;
+  border-radius: 0 150px 150px 0;
+}
+
+/* 
+.tabsMain {
+  display: flex;
+  align-items: center;
+  margin-top: 300px;
+  height: 100%;
+  width: 100vw;
+  position: relative;
+}
+
+.tabs {
+  position: absolute;
+  width: 90%;
+  left: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.tabsLeft {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+}
+
+.tabsLeft h1 {
+  font-size: 2rem;
+  color: var(--veryDarkBlue);
+  margin-bottom: 1rem;
+}
+
+.tabsLeft p {
+  margin-bottom: 2rem;
+}
+
+.tabsLeft button {
+  width: max(110px,30%);
+  height: 2.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: var(--softBlue);
+  color: white;
+}
+
+.tabsLeft button:hover {
+  background-color: white;
+  color: var(--softBlue);
+  border: 2px solid var(--softBlue);
+}
+
+.tabsRight {
+  margin-top: -100px;
+  margin-right: 5%;
+}
+
+.tabsRight img {
+  position: absolute;
+  left: 10%;
+}
+
+.tabs .elipse {
+  left: 0;
+  top: 80px;
+  border-radius: 0 150px 150px 0;
+} */
