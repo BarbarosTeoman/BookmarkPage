@@ -55,6 +55,7 @@ p {
 
 .header a {
   cursor: pointer;
+  margin-right: 10px;
 }
 
 .headerList {
@@ -104,13 +105,13 @@ p {
 .descriptionLeft {
   width: 50%;
   padding-right: 5%;
-  padding-left: max(5%, 10px);
+  padding-left: max(10%, 10px);
   display: flex;
   flex-direction: column;
 }
 
 .descriptionLeft h1 {
-  font-size: min(2rem, 4vw);
+  font-size: min(3rem, 4vw);
   color: var(--veryDarkBlue);
   margin-bottom: 1rem;
 }
@@ -120,18 +121,19 @@ p {
 }
 
 .descriptionLeft button {
-  width: max(110px,30%);
+  width: max(85px,30%);
   height: 2.5rem;
   border-radius: 5px;
   outline: none;
   border: none;
   cursor: pointer;
+  font-size: min(0.8rem, 2vw);
   font-weight: 700;
   margin-right: 10px;
 }
 
 .descriptionLeft button:first-child {
-  margin-right: 20px;
+  margin-right: minmax(20px , 20%);
   background-color: var(--softBlue);
   color: white;
 }
@@ -153,21 +155,20 @@ p {
 }
 
 .descriptionRight {
+  padding-top: 50px;
   position: relative;
   width: 50%;
   display: flex;
-  flex-direction: column;
 }
 
 .descriptionRight img {
-  align-self: flex-start;
-  width: min(80%, 600px);
+  width: min(100%, 700px);
   min-width: 300px;
 }
 
 .description .elipse {
   position: absolute;
-  bottom: -50px;
+  bottom: 0;
   border-radius: 150px 0 0 150px;
   right: 0;
 }
