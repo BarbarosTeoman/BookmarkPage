@@ -1,7 +1,7 @@
-export default function Tab2() {
+export default function Tab3() {
   return (
     <div className="tabsMain">
-      <div className='tabs' style={{marginTop: 0}}>
+      <div className='tabs'>
         <div className="tabsLeft">
           <h1>Share your bookmarks</h1>
           <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>

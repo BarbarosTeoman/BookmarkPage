@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
-/*1050px*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500&display=swap');
+/*610px*/
 :root {
   --softBlue: hsl(231, 69%, 60%);
   --softRed: hsl(0, 94%, 66%);
@@ -20,6 +20,7 @@ body {
 
 .main {
   height: 100px;
+  position: relative;
 }
 
 button {
@@ -78,14 +79,17 @@ p {
   background-color: var(--softRed);
   border: 2px solid var(--softRed);
   outline: none;
-  padding: 0.6rem 2.1rem;
+  border: none;
   border-radius: 5px;
   color: white;
+  width: 5rem;
+  height: 2.5rem;
 }
 
 .headerList button:hover {
   background-color: white;
   color: var(--softRed);
+  border: 2px solid var(--softRed);
 }
 
 /*-------DESCRIPTION-------*/
@@ -97,9 +101,7 @@ p {
   justify-content: space-between;
   gap: 10px;
   align-items: center;
-  margin-top: 150px;
   margin-bottom: 100px;
-  height: 100%;
 }
 
 .descriptionLeft {
@@ -120,8 +122,13 @@ p {
   margin-bottom: 2rem;
 }
 
+.descriptionLeftButtons {
+  display: flex;
+  align-items: center;
+}
+
 .descriptionLeft button {
-  width: max(85px,30%);
+  width: max(85px,40%);
   height: 2.5rem;
   border-radius: 5px;
   outline: none;
@@ -155,7 +162,7 @@ p {
 }
 
 .descriptionRight {
-  padding-top: 50px;
+  margin-top: min(1%, 50px);
   position: relative;
   width: 50%;
   display: flex;
@@ -179,14 +186,14 @@ p {
 .featuresMain {
   width: 100%;
   height: 500px;
-  margin-top: 300px;
+  margin-top: -50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .features {
-  width: 60%;
+  width: max(50%, 550px);
 }
 
 .features h1 {
@@ -255,9 +262,8 @@ p {
   justify-content: space-between;
   gap: 10px;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
   height: 100%;
+  margin-top: 0.4%;
 }
 
 .tabsLeft {
@@ -307,6 +313,7 @@ p {
   align-self: flex-end;
   width: min(80%, 550px);
   min-width: 300px;
+  padding-left: 20px;
 }
 
 .tabs .elipse {
@@ -315,74 +322,272 @@ p {
   border-radius: 0 150px 150px 0;
 }
 
-/* 
-.tabsMain {
-  display: flex;
-  align-items: center;
-  margin-top: 300px;
-  height: 100%;
-  width: 100vw;
-  position: relative;
-}
+/*-----------EXTENSIONS-----------*/
 
-.tabs {
-  position: absolute;
-  width: 90%;
-  left: 0;
-  display: flex;
-  flex-direction: row-reverse;
-  margin-top: 150px;
-  margin-bottom: 100px;
-}
-
-.tabsLeft {
-  width: 40%;
+.extensionMain {
+  width: 100%;
+  height: 550px;
+  margin-top: max(17%,150px);
   display: flex;
   flex-direction: column;
-  position: absolute;
-  right: 0;
+  align-items: center;
 }
 
-.tabsLeft h1 {
-  font-size: 2rem;
+.extension {
+  width: max(50%, 550px);
+}
+
+.extension h1 {
   color: var(--veryDarkBlue);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-.tabsLeft p {
+.extension p {
+  text-align: center;
   margin-bottom: 2rem;
+  padding: 0 3rem;
 }
 
-.tabsLeft button {
-  width: max(110px,30%);
+.cards {
+  padding: 0 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  height: 500px;
+}
+
+#card1 {
+  align-self: flex-start;
+}
+
+#card2 {
+  align-self: center;
+}
+
+#card3 {
+  align-self: flex-end;
+}
+
+.extensionCard {
+  width: max(20%, 200px);
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  height: 350px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+}
+
+.extensionCard h4 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-top: 30px;
+  color: var(--veryDarkBlue);
+}
+
+.extensionCard p {
+  font-size: 0.75rem;
+  margin-top: 8px;
+}
+
+.img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+
+.logo {
+  width: 50%;
+  margin-top: 40px;
+}
+
+.hr {
+  margin-top: 40px;
+}
+
+.extensionCard button {
+  margin-top: 30px;
+  width: 80%;
   height: 2.5rem;
+  padding: 0 10px;
   border-radius: 5px;
   outline: none;
   border: none;
   cursor: pointer;
-  font-weight: 700;
   background-color: var(--softBlue);
-  color: white;
+  color: white; 
 }
 
-.tabsLeft button:hover {
+.extensionCard button:hover {
   background-color: white;
   color: var(--softBlue);
   border: 2px solid var(--softBlue);
 }
 
-.tabsRight {
-  margin-top: -100px;
-  margin-right: 5%;
+/*-----------FAQ-----------*/
+
+.faqMain {
+  width: 100%;
+  height: 550px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.tabsRight img {
-  position: absolute;
-  left: 10%;
+.faq {
+  width: max(41%, 550px);
 }
 
-.tabs .elipse {
-  left: 0;
-  top: 80px;
-  border-radius: 0 150px 150px 0;
-} */
+.faq h1 {
+  color: var(--veryDarkBlue);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.faq p {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 3rem;
+}
+
+.questions {
+  width: max(41%, 550px);
+}
+
+details {
+  color: var(--veryDarkBlue);
+  font-size: min(1.1rem, 3vw);
+  border-bottom: 0.3px solid var(--grayishBlue);
+  cursor: pointer;
+  font-weight: 400;
+}
+
+details:first-of-type {
+  border-top: 0.3px solid var(--grayishBlue);
+}
+
+summary {
+  padding: 1em 1em 1em 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+  transition: height 1s ease;
+}
+
+summary:hover {
+  color: var(--softRed);
+}
+
+details div {
+  color: var(--grayishBlue);
+  line-height: 2rem;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] div{
+  padding: 1em 0;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.faqButton {
+  width: max(41%, 550px);
+  display: flex;
+  justify-content: center;
+}
+
+.faqMain button {
+  margin-top: 50px;
+  width: 20%;
+  height: 2.5rem;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-size: .8rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: var(--softBlue);
+  color: white; 
+}
+
+.faqMain button:hover {
+  background-color: white;
+  color: var(--softBlue);
+  border: 2px solid var(--softBlue);
+}
+
+/*-----------CONTACT-----------*/
+
+.contactMain {
+  width: 100%;
+  margin-top: 50px;
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--softBlue);
+}
+
+.contact {
+  width: 450px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact p {
+  color: white;
+  letter-spacing: .5rem;
+  margin-bottom: 30px;
+  font-size: small;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.inputGroup {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.contact input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact button {
+  background-color: var(--softRed);
+  border: 2px solid var(--softRed);
+  width: 30%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  height: 2.5rem;
+}
+
+.contact button:hover {
+  background-color: white;
+  color: var(--softRed);
+  border: 2px solid var(--softRed);
+}

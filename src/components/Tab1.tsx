@@ -1,6 +1,6 @@
 export default function Tab1() {
   return (
-    <div className='tabs'>
+    <div className='tabs' style={{marginTop: "50px"}}>
       <div className="tabsLeft">
         <h1>Bookmark in one click</h1>
         <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
