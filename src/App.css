@@ -255,6 +255,10 @@ p {
 
 /*----------TABS-----------*/
 
+.tabsMain {
+  width: 100%;
+}
+
 .tabs {
   width: 100%;
   display: flex;
