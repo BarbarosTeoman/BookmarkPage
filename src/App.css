@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500&display=swap');
 /*610px*/
+
 :root {
   --softBlue: hsl(231, 69%, 60%);
   --softRed: hsl(0, 94%, 66%);
@@ -19,7 +20,6 @@ body {
 }
 
 .main {
-  height: 100px;
   position: relative;
 }
 
@@ -254,10 +254,6 @@ p {
 }
 
 /*----------TABS-----------*/
-
-.tabsMain {
-  width: 100%;
-}
 
 .tabs {
   width: 100%;
@@ -572,17 +568,64 @@ details[open] div{
   gap: 10px;
 }
 
+.inputAndButton {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  position: relative;
+  align-items: center;
+}
+
+.inputAndButton img {
+  position: absolute;
+  right: 0;
+  top: 9px;
+  padding: 0 10px;
+  cursor: pointer;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.errorDiv {
+  background-color: var(--softRed);
+  height: 65px;
+  position: absolute;
+  width: calc(100% + 4px);
+  z-index: 0;
+  top: -2px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  font-size: x-small;
+  display: flex;
+  visibility: hidden;
+  align-items: flex-end;
+}
+
+.error {
+  visibility: unset;
+}
 
 .contact input {
-  width: 70%;
+  z-index: 1;
+  width: 100%;
   padding: 10px 0 10px 15px;
   border-radius: 5px;
   outline: none;
   border: none;
   font-size: .8rem;
+  height: 2.5rem;
 }
 
-.contact input::placeholder {
+.contact input::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+}
+
+.inputGroup::placeholder {
   color: var(--grayishBlue);
 }
 
@@ -607,30 +650,39 @@ details[open] div{
 /*-----------FOOTER-----------*/
 
 .footerMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .8rem 10%;
+  color: white;
   width: 100%;
   background-color: var(--veryDarkBlue);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
 }
 
 .footerLeft {
-  width: max-content;
+  width: min(80%,500px);
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 50px;
   list-style: none;
-  gap: 10%;
+  justify-content: space-between;
 }
 
 .footerRight {
-  width: max-content;
+  width: min(15%,100px);
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
   list-style: none;
-  gap: 50%;
+}
+
+.footerLeft li {
+  font-weight: 200;
+  font-size: .9rem;
+}
+
+.footerMain li:hover {
+  color: var(--softRed);
+  cursor: pointer;
 }
