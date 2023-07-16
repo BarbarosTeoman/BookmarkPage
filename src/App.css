@@ -2,689 +2,721 @@
 /*610px*/
 
 :root {
-  --softBlue: hsl(231, 69%, 60%);
-  --softRed: hsl(0, 94%, 66%);
-  --grayishBlue: hsl(229, 8%, 60%);
-  --veryDarkBlue: hsl(229, 31%, 21%);
+	--softBlue: hsl(231, 69%, 60%);
+	--softRed: hsl(0, 94%, 66%);
+	--grayishBlue: hsl(229, 8%, 60%);
+	--veryDarkBlue: hsl(229, 31%, 21%);
 }
 
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  font-family: Rubik;
+	font-family: Rubik;
 }
 
 .main {
-  position: relative;
+	position: relative;
 }
 
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 button:active {
-  transform: translateY(1px);
+	transform: translateY(1px);
 }
 
 .elipse {
-  width: min(90%, 40vw);
-  background-color: var(--softBlue);
-  height: min(15rem, 20vw);
-  z-index: -1;
+	width: min(90%, 40vw);
+	background-color: var(--softBlue);
+	height: min(15rem, 20vw);
+	z-index: -1;
 }
 
 p {
-  font-size: min(1.1rem, 3vw);
-  line-height: 1.5rem;
-  color: var(--grayishBlue);
+	font-size: min(1.1rem, 3vw);
+	line-height: 1.5rem;
+	color: var(--grayishBlue);
 }
 
 /*-------HEADER-------*/
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3rem 0;
-  margin: 0 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3rem 0;
+	margin: 0 10%;
 }
 
 .header a {
-  cursor: pointer;
-  margin-right: 10px;
+	cursor: pointer;
+	margin-right: 10px;
 }
 
 .headerList {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  width: 400px;
-  align-items: center;
-  color: var(--grayishBlue);
-  font-size: 14px;
-  -webkit-user-select: none;
-  user-select: none;
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	width: 400px;
+	align-items: center;
+	color: var(--grayishBlue);
+	font-size: 14px;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 .headerList li:hover {
-  cursor: pointer;
-  color: var(--softRed);
+	cursor: pointer;
+	color: var(--softRed);
 }
 
-.headerList button {
-  background-color: var(--softRed);
-  border: 2px solid var(--softRed);
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  width: 5rem;
-  height: 2.5rem;
+.loginButton {
+	background-color: var(--softRed);
+	border: 2px solid var(--softRed);
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	width: 5rem;
+	height: 2.5rem;
 }
 
-.headerList button:hover {
-  background-color: white;
-  color: var(--softRed);
-  border: 2px solid var(--softRed);
+.loginButton:hover {
+	background-color: white;
+	color: var(--softRed);
+	border: 2px solid var(--softRed);
+}
+
+.hamburger {
+	display: none;
+}
+
+.hamburgerMenu {
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: purple;
+	opacity: 0.5;
+	overflow: hidden;
 }
 
 /*-------DESCRIPTION-------*/
 
 .description {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 10px;
-  align-items: center;
-  margin-bottom: 100px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 10px;
+	align-items: center;
+	margin-bottom: 100px;
 }
 
 .descriptionLeft {
-  width: 50%;
-  padding-right: 5%;
-  padding-left: max(10%, 10px);
-  display: flex;
-  flex-direction: column;
+	width: 50%;
+	padding-right: 5%;
+	padding-left: max(10%, 10px);
+	display: flex;
+	flex-direction: column;
 }
 
 .descriptionLeft h1 {
-  font-size: min(3rem, 5vw);
-  color: var(--veryDarkBlue);
-  margin-bottom: 1rem;
+	font-size: min(3rem, 5vw);
+	color: var(--veryDarkBlue);
+	margin-bottom: 1rem;
 }
 
 .descriptionLeft p {
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .descriptionLeftButtons {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .descriptionLeft button {
-  width: max(85px, 40%);
-  height: 2.5rem;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  font-size: min(0.8rem, 2vw);
-  font-weight: 700;
-  margin-right: 10px;
+	width: max(85px, 40%);
+	height: 2.5rem;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-size: min(0.8rem, 2vw);
+	font-weight: 700;
+	margin-right: 10px;
 }
 
 .descriptionLeft button:first-child {
-  margin-right: minmax(20px, 20%);
-  background-color: var(--softBlue);
-  color: white;
+	margin-right: minmax(20px, 20%);
+	background-color: var(--softBlue);
+	color: white;
 }
 
 .descriptionLeft button:first-child:hover {
-  background-color: white;
-  color: var(--softBlue);
-  border: 2px solid var(--softBlue);
+	background-color: white;
+	color: var(--softBlue);
+	border: 2px solid var(--softBlue);
 }
 
 .descriptionLeft button:last-child {
-  background-color: hsl(229, 8%, 90%);
-  color: var(--veryDarkBlue);
+	background-color: hsl(229, 8%, 90%);
+	color: var(--veryDarkBlue);
 }
 
 .descriptionLeft button:last-child:hover {
-  background-color: white;
-  border: 2px solid var(--veryDarkBlue);
+	background-color: white;
+	border: 2px solid var(--veryDarkBlue);
 }
 
 .descriptionRight {
-  margin-top: min(1%, 50px);
-  position: relative;
-  width: 50%;
-  display: flex;
+	margin-top: min(1%, 50px);
+	position: relative;
+	width: 50%;
+	display: flex;
 }
 
 .descriptionRight img {
-  width: min(100%, 700px);
-  min-width: 300px;
+	width: min(100%, 700px);
+	min-width: 300px;
 }
 
 .description .elipse {
-  position: absolute;
-  bottom: 0;
-  border-radius: 150px 0 0 150px;
-  right: 0;
+	position: absolute;
+	bottom: 0;
+	border-radius: 150px 0 0 150px;
+	right: 0;
 }
 
 /*-------FEATURES-------*/
 
 .featuresMain {
-  width: 100%;
-  height: 500px;
-  margin-top: -50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	width: 100%;
+	height: 500px;
+	margin-top: -50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .features {
-  width: max(50%, 550px);
+	width: max(50%, 550px);
 }
 
 .features h1 {
-  color: var(--veryDarkBlue);
-  margin-bottom: 1rem;
-  text-align: center;
+	color: var(--veryDarkBlue);
+	margin-bottom: 1rem;
+	text-align: center;
 }
 
 .features p {
-  text-align: center;
-  margin-bottom: 3rem;
-  padding: 0 3rem;
+	text-align: center;
+	margin-bottom: 3rem;
+	padding: 0 3rem;
 }
 
 .tabHeadings {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-  position: relative;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+	position: relative;
 }
 
 .tabHeading {
-  width: 200px;
-  text-align: center;
-  color: var(--grayishBlue);
-  position: relative;
-  -webkit-user-select: none;
-  user-select: none;
+	width: 200px;
+	text-align: center;
+	color: var(--grayishBlue);
+	position: relative;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 .tabHeadings::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 0.5px;
-  background-color: var(--grayishBlue);
-  bottom: -20px;
-  left: 0;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0.5px;
+	background-color: var(--grayishBlue);
+	bottom: -20px;
+	left: 0;
 }
 
 .active {
-  color: var(--veryDarkBlue);
-  font-weight: 500;
+	color: var(--veryDarkBlue);
+	font-weight: 500;
 }
 
 .active::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  background-color: var(--softRed);
-  bottom: -22.5px;
-  left: 0;
-  z-index: 1;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	background-color: var(--softRed);
+	bottom: -22.5px;
+	left: 0;
+	z-index: 1;
 }
 
 .tabHeading:hover {
-  cursor: pointer;
-  color: var(--veryDarkBlue);
+	cursor: pointer;
+	color: var(--veryDarkBlue);
 }
 
 /*----------TABS-----------*/
 
 .tabs {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  gap: 10px;
-  align-items: center;
-  height: 100%;
-  margin-top: 0.4%;
+	width: 100%;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	gap: 10px;
+	align-items: center;
+	height: 100%;
+	margin-top: 0.4%;
 }
 
 .tabsLeft {
-  width: 50%;
-  padding-left: 5%;
-  padding-right: max(5%, 10px);
-  display: flex;
-  flex-direction: column;
+	width: 50%;
+	padding-left: 5%;
+	padding-right: max(5%, 10px);
+	display: flex;
+	flex-direction: column;
 }
 
 .tabsLeft h1 {
-  font-size: min(2rem, 4vw);
-  color: var(--veryDarkBlue);
-  margin-bottom: 1rem;
+	font-size: min(2rem, 4vw);
+	color: var(--veryDarkBlue);
+	margin-bottom: 1rem;
 }
 
 .tabsLeft p {
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .tabsLeft button {
-  width: max(110px, 30%);
-  height: 2.5rem;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  font-weight: 700;
-  background-color: var(--softBlue);
-  color: white;
+	width: max(110px, 30%);
+	height: 2.5rem;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-weight: 700;
+	background-color: var(--softBlue);
+	color: white;
 }
 
 .tabsLeft button:hover {
-  background-color: white;
-  color: var(--softBlue);
-  border: 2px solid var(--softBlue);
+	background-color: white;
+	color: var(--softBlue);
+	border: 2px solid var(--softBlue);
 }
 
 .tabsRight {
-  position: relative;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
+	position: relative;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
 }
 
 .tabsRight img {
-  align-self: flex-end;
-  width: min(80%, 550px);
-  min-width: 300px;
-  padding-left: 20px;
+	align-self: flex-end;
+	width: min(80%, 550px);
+	min-width: 300px;
+	padding-left: 20px;
 }
 
 .tabs .elipse {
-  position: absolute;
-  bottom: -50px;
-  border-radius: 0 150px 150px 0;
+	position: absolute;
+	bottom: -50px;
+	border-radius: 0 150px 150px 0;
 }
 
 /*-----------EXTENSIONS-----------*/
 
 .extensionMain {
-  width: 100%;
-  height: 550px;
-  margin-top: min(25%, 300px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	width: 100%;
+	height: 550px;
+	margin-top: min(25%, 300px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .extension {
-  width: max(50%, 550px);
+	width: max(50%, 550px);
 }
 
 .extension h1 {
-  color: var(--veryDarkBlue);
-  margin-bottom: 1.5rem;
-  text-align: center;
+	color: var(--veryDarkBlue);
+	margin-bottom: 1.5rem;
+	text-align: center;
 }
 
 .extension p {
-  text-align: center;
-  margin-bottom: 2rem;
-  padding: 0 3rem;
+	text-align: center;
+	margin-bottom: 2rem;
+	padding: 0 3rem;
 }
 
 .cards {
-  padding: 0 50px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  height: 500px;
+	padding: 0 50px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	height: 500px;
 }
 
 #card1 {
-  align-self: flex-start;
+	align-self: flex-start;
 }
 
 #card2 {
-  align-self: center;
+	align-self: center;
 }
 
 #card3 {
-  align-self: flex-end;
+	align-self: flex-end;
 }
 
 .extensionCard {
-  width: max(20%, 200px);
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  height: 350px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  overflow: hidden;
-  text-align: center;
-  padding: 10px;
+	width: max(20%, 200px);
+	box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+	height: 350px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+	text-align: center;
+	padding: 10px;
 }
 
 .extensionCard h4 {
-  font-weight: 500;
-  font-size: 1.1rem;
-  margin-top: 30px;
-  color: var(--veryDarkBlue);
+	font-weight: 500;
+	font-size: 1.1rem;
+	margin-top: 30px;
+	color: var(--veryDarkBlue);
 }
 
 .extensionCard p {
-  font-size: 0.75rem;
-  margin-top: 8px;
+	font-size: 0.75rem;
+	margin-top: 8px;
 }
 
 .img {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 120px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 120px;
 }
 
 .logo {
-  margin-top: 40px;
+	margin-top: 40px;
 }
 
 .hr {
-  margin-top: 40px;
+	margin-top: 40px;
 }
 
 .extensionCard button {
-  margin-top: 30px;
-  width: 80%;
-  height: 2.5rem;
-  padding: 0 10px;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  background-color: var(--softBlue);
-  color: white;
+	margin-top: 30px;
+	width: 80%;
+	height: 2.5rem;
+	padding: 0 10px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background-color: var(--softBlue);
+	color: white;
 }
 
 .extensionCard button:hover {
-  background-color: white;
-  color: var(--softBlue);
-  border: 2px solid var(--softBlue);
+	background-color: white;
+	color: var(--softBlue);
+	border: 2px solid var(--softBlue);
 }
 
 /*-----------FAQ-----------*/
 
 .faqMain {
-  width: 100%;
-  height: max-content;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	width: 100%;
+	height: max-content;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .faq {
-  width: max(41%, 550px);
+	width: max(41%, 550px);
 }
 
 .faq h1 {
-  color: var(--veryDarkBlue);
-  margin-bottom: 1.5rem;
-  text-align: center;
+	color: var(--veryDarkBlue);
+	margin-bottom: 1.5rem;
+	text-align: center;
 }
 
 .faq p {
-  text-align: center;
-  margin-bottom: 2rem;
-  padding: 0 3rem;
+	text-align: center;
+	margin-bottom: 2rem;
+	padding: 0 3rem;
 }
 
 .questions {
-  width: max(41%, 550px);
+	width: max(41%, 550px);
 }
 
 details {
-  color: var(--veryDarkBlue);
-  font-size: min(1.1rem, 3vw);
-  border-bottom: 0.3px solid var(--grayishBlue);
-  font-weight: 400;
+	color: var(--veryDarkBlue);
+	font-size: min(1.1rem, 3vw);
+	border-bottom: 0.3px solid var(--grayishBlue);
+	font-weight: 400;
 }
 
 details:first-of-type {
-  border-top: 0.3px solid var(--grayishBlue);
+	border-top: 0.3px solid var(--grayishBlue);
 }
 
 summary {
-  padding: 1em 1em 1em 0;
-  list-style: none;
-  display: flex;
-  cursor: pointer;
-  justify-content: space-between;
-  transition: height 1s ease;
-  -webkit-user-select: none;
-  user-select: none;
+	padding: 1em 1em 1em 0;
+	list-style: none;
+	display: flex;
+	cursor: pointer;
+	justify-content: space-between;
+	transition: height 1s ease;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 summary:hover {
-  color: var(--softRed);
+	color: var(--softRed);
 }
 
 summary::-webkit-details-marker {
-  display: none;
+	display: none;
 }
 
 details[open] div {
-  padding: 0 0 1em 0;
-  font-size: 1rem;
-  color: var(--grayishBlue);
-  line-height: 2rem;
+	padding: 0 0 1em 0;
+	font-size: 1rem;
+	color: var(--grayishBlue);
+	line-height: 2rem;
 }
 
 .rotate {
-  transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
 .faqButton {
-  width: max(41%, 550px);
-  display: flex;
-  justify-content: center;
+	width: max(41%, 550px);
+	display: flex;
+	justify-content: center;
 }
 
 .faqMain button {
-  margin-top: 50px;
-  width: 20%;
-  height: 2.5rem;
-  padding: 0 10px;
-  border-radius: 5px;
-  font-size: 0.8rem;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  background-color: var(--softBlue);
-  color: white;
+	margin-top: 50px;
+	width: 20%;
+	height: 2.5rem;
+	padding: 0 10px;
+	border-radius: 5px;
+	font-size: 0.8rem;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background-color: var(--softBlue);
+	color: white;
 }
 
 .faqMain button:hover {
-  background-color: white;
-  color: var(--softBlue);
-  border: 2px solid var(--softBlue);
+	background-color: white;
+	color: var(--softBlue);
+	border: 2px solid var(--softBlue);
 }
 
 /*-----------CONTACT-----------*/
 
 .contactMain {
-  width: 100%;
-  margin-top: 150px;
-  padding: 50px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--softBlue);
+	width: 100%;
+	margin-top: 150px;
+	padding: 50px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--softBlue);
 }
 
 .contact {
-  width: 450px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	width: 450px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .contact p {
-  color: white;
-  letter-spacing: 0.5rem;
-  margin-bottom: 30px;
-  font-size: small;
+	color: white;
+	letter-spacing: 0.5rem;
+	margin-bottom: 30px;
+	font-size: small;
 }
 
 .contact h2 {
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 30px;
+	font-size: 2rem;
+	font-weight: 500;
+	margin-bottom: 30px;
 }
 
 .inputGroup {
-  width: 100%;
-  display: flex;
-  gap: 10px;
+	width: 100%;
+	display: flex;
+	gap: 10px;
 }
 
 .inputAndButton {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  position: relative;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	position: relative;
+	align-items: center;
 }
 
 .inputAndButton img {
-  position: absolute;
-  right: 0;
-  top: 9px;
-  padding: 0 10px;
-  cursor: pointer;
-  z-index: 2;
+	position: absolute;
+	right: 0;
+	top: 9px;
+	padding: 0 10px;
+	cursor: pointer;
+	z-index: 2;
 }
 
 .messageDiv {
-  height: 65px;
-  position: absolute;
-  width: calc(100% + 4px);
-  z-index: 0;
-  top: -2px;
-  border-radius: 6px;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  font-size: x-small;
-  display: flex;
-  align-items: flex-end;
+	height: 65px;
+	position: absolute;
+	width: calc(100% + 4px);
+	z-index: 0;
+	top: -2px;
+	border-radius: 6px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	font-size: x-small;
+	display: flex;
+	align-items: flex-end;
 }
 
 .contact input {
-  z-index: 1;
-  width: 100%;
-  padding: 10px 0 10px 15px;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  font-size: 0.8rem;
-  height: 2.5rem;
+	z-index: 1;
+	width: 100%;
+	padding: 10px 0 10px 15px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	font-size: 0.8rem;
+	height: 2.5rem;
 }
 
 .contact input::after {
-  content: "";
-  width: 100%;
-  height: 5px;
-  position: absolute;
-  bottom: 0;
+	content: "";
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	bottom: 0;
 }
 
 .inputGroup::placeholder {
-  color: var(--grayishBlue);
+	color: var(--grayishBlue);
 }
 
 .contact button {
-  background-color: var(--softRed);
-  border: 2px solid var(--softRed);
-  width: 30%;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  height: 2.5rem;
-  font-size: 0.8rem;
+	background-color: var(--softRed);
+	border: 2px solid var(--softRed);
+	width: 30%;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	height: 2.5rem;
+	font-size: 0.8rem;
 }
 
 .contact button:hover {
-  background-color: white;
-  color: var(--softRed);
-  border: 2px solid var(--softRed);
+	background-color: white;
+	color: var(--softRed);
+	border: 2px solid var(--softRed);
 }
 
 /*-----------FOOTER-----------*/
 
 .footerMain {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.8rem 10%;
-  color: white;
-  width: 100%;
-  background-color: var(--veryDarkBlue);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.8rem 10%;
+	color: white;
+	width: 100%;
+	background-color: var(--veryDarkBlue);
 }
 
 .footerLeft {
-  width: min(80%, 500px);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  list-style: none;
-  justify-content: space-between;
+	width: min(80%, 500px);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	list-style: none;
+	justify-content: space-between;
 }
 
 .footerRight {
-  width: min(15%, 100px);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
+	width: min(15%, 100px);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
 }
 
 .footerLeft li {
-  font-weight: 200;
-  font-size: 0.9rem;
-  cursor: pointer;
-  -webkit-user-select: none;
-  user-select: none;
+	font-weight: 200;
+	font-size: 0.9rem;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 .footerLeft li:hover {
-  color: var(--softRed);
+	color: var(--softRed);
 }
 
 .footerMain li:hover path {
-  fill: var(--softRed);
-  cursor: pointer;
+	fill: var(--softRed);
+	cursor: pointer;
+}
+
+@media screen and (width <= 610px) {
+	.headerList li:not(:last-child) {
+		display: none;
+	}
+
+	.headerList {
+		justify-content: flex-end;
+	}
+
+	.hamburger {
+		display: block;
+		outline: none;
+		border: none;
+	}
 }
