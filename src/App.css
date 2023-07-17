@@ -105,9 +105,62 @@ p {
 	left: 0;
 	height: 100vh;
 	width: 100vw;
-	background-color: purple;
-	opacity: 0.5;
+	background-color: var(--veryDarkBlue);
+	opacity: 0.9;
 	overflow: hidden;
+	flex-direction: column;
+	padding: 3rem 10%;
+	display: grid;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.hamburgerTop {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: max-content;
+}
+
+.hamburgerList {
+	list-style: none;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 100;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	margin-top: -6rem;
+	height: max-content;
+}
+
+.hamburgerList li {
+	width: 100%;
+	text-align: center;
+	padding: 1rem 0;
+	border-top: 0.1px solid var(--grayishBlue);
+}
+
+.hamburgerButton {
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 5px;
+	margin-top: 1rem;
+	color: white;
+	width: 100%;
+	height: 3rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+
+.hamburgerSocial {
+	align-self: flex-end;
+	height: max-content;
+	justify-self: center;
+	display: flex;
+	gap: 50px;
 }
 
 /*-------DESCRIPTION-------*/
@@ -116,7 +169,6 @@ p {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	gap: 10px;
 	align-items: center;
 	margin-bottom: 100px;
@@ -718,5 +770,23 @@ details[open] div {
 		display: block;
 		outline: none;
 		border: none;
+	}
+
+	.description {
+		flex-direction: column-reverse;
+	}
+
+	.descriptionRight {
+		margin-top: min(1%, 50px);
+		position: relative;
+		width: 100%;
+		display: flex;
+	}
+
+	.elipse {
+		width: 70%;
+		background-color: var(--softBlue);
+		height: min(25rem, 55vw);
+		z-index: -1;
 	}
 }
