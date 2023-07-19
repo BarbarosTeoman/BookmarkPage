@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500&display=swap");
-/*610px*/
 
 :root {
 	--softBlue: hsl(231, 69%, 60%);
@@ -814,5 +813,45 @@ details[open] div {
 		background-color: var(--softBlue);
 		height: min(25rem, 55vw);
 		z-index: -1;
+	}
+
+	.features {
+		width: 80%;
+		margin-top: 0;
+		text-align: center;
+		padding: 0;
+	}
+
+	.features p {
+		font-size: min(1.1rem, 4vw);
+		margin-bottom: 1rem;
+		padding: 0;
+	}
+
+	.tabHeadings {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.tabHeadings::after {
+		display: none;
+	}
+
+	.tabHeading {
+		padding: 1rem 0;
+		width: 100%;
+		border-top: 0.1px solid hsla(229, 8%, 60%, 0.5);
+	}
+
+	.tabHeading:last-child {
+		border-bottom: 0.1px solid hsla(229, 8%, 60%, 0.5);
+	}
+
+	.active::after {
+		width: 50%;
+		height: 3px;
+		bottom: -2px;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
