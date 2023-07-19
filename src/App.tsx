@@ -22,7 +22,11 @@ function App() {
 			<>
 				<div
 					className="hamburgerMenu"
-					style={isHamburgerOpen ? { opacity: "0.9" } : { opacity: "0" }}
+					style={
+						isHamburgerOpen
+							? { opacity: "0.95", zIndex: 100 }
+							: { opacity: "0" }
+					}
 				>
 					<div className="hamburgerTop">
 						<img src="src\assets\logo-bookmark-white.svg" alt="" />
@@ -89,8 +93,8 @@ function App() {
 				</div>
 			</>
 			<Description />
-			{/* <Features />
-			<Extensions />
+			<Features />
+			{/*<Extensions />
 			<FAQ />
 			<Contact />
 			<Footer /> */}
