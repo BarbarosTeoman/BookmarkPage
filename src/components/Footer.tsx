@@ -3,7 +3,7 @@ export default function Footer() {
     <div className="footerMain">
       <ul className="footerLeft">
         <li>
-          <img src="src/assets/logo-bookmark-white.svg" alt="" />
+          <img src="/src/assets/logo-bookmark-white.svg" alt="" />
         </li>
         <li>FEATURES</li>
         <li>PRICING</li>
