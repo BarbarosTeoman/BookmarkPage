@@ -94,10 +94,10 @@ function App() {
 			</>
 			<Description />
 			<Features />
-			{/*<Extensions />
+			<Extensions />
 			<FAQ />
 			<Contact />
-			<Footer /> */}
+			<Footer />
 		</div>
 	)
 }

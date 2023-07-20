@@ -1,6 +1,6 @@
 export default function Tab3() {
 	return (
-		<div className="tabs" style={{ marginTop: "min(5%, 30px)" }}>
+		<div className="tabs tab3" style={{ marginTop: "min(5%, 30px)" }}>
 			<div className="tabsLeft">
 				<h1>Share your bookmarks</h1>
 				<p>

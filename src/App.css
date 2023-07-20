@@ -469,9 +469,6 @@ p {
 	display: flex;
 	justify-content: center;
 	height: 120px;
-}
-
-.logo {
 	margin-top: 40px;
 }
 
@@ -805,7 +802,7 @@ details[open] div {
 	}
 
 	.descriptionLeft button {
-		font-size: min(0.7rem, 4vw);
+		font-size: min(0.75rem, 5vw);
 	}
 
 	.elipse {
@@ -857,7 +854,6 @@ details[open] div {
 
 	.tabs {
 		flex-direction: column-reverse;
-		margin-top: 5% !important;
 	}
 
 	.tabsRight {
@@ -866,6 +862,7 @@ details[open] div {
 		width: 100%;
 		display: flex;
 		justify-content: center;
+		margin-bottom: 2rem;
 	}
 
 	.tabsRight img {
@@ -894,5 +891,227 @@ details[open] div {
 	.tabsLeftButtons {
 		justify-content: center;
 		width: 100%;
+	}
+
+	.extensionMain {
+		height: unset;
+		margin-top: 100%;
+	}
+
+	.extension {
+		width: 85%;
+	}
+
+	.extension h1 {
+		font-size: min(4rem, 7vw);
+	}
+
+	.extension p {
+		font-size: min(1.1rem, 4vw);
+		padding: 0;
+	}
+
+	.cards {
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+		margin-top: 350px;
+	}
+
+	#card1 {
+		align-self: center;
+	}
+
+	#card2 {
+		align-self: center;
+	}
+
+	#card3 {
+		align-self: center;
+	}
+
+	.extensionCard {
+		width: 80%;
+		height: 100%;
+		overflow: visible;
+	}
+
+	.img {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		height: 100px;
+	}
+
+	.extensionCard h4 {
+		font-size: min(4rem, 7vw);
+	}
+
+	.extensionCard p {
+		font-size: min(1.1rem, 4vw);
+	}
+
+	.extensionCard button {
+		font-size: min(1.1rem, 4vw);
+		margin-bottom: 20px;
+	}
+
+	.hr {
+		width: 100%;
+	}
+
+	.faqMain {
+		width: 100%;
+		margin-top: 450px;
+	}
+
+	.faq {
+		width: 80%;
+	}
+
+	.faq h1 {
+		font-size: min(4rem, 7vw);
+	}
+
+	.faq p {
+		font-size: min(1.1rem, 4vw);
+		padding: 0;
+	}
+
+	.questions {
+		width: 80%;
+	}
+
+	.faqButton {
+		width: 100%;
+	}
+
+	.faqButton button{
+		width: max(110px, 30%);
+	}
+	
+	summary {
+		font-size: min(1.1rem, 3vw);
+	}
+
+	details[open] div {
+		font-size: .7rem;
+		line-height: 1.5rem;
+	}
+
+	.contactMain {
+		padding: 30px;
+	}
+
+	.contact {
+		width: 100%;
+	}
+
+	.contact h2 {
+		word-wrap: balanced;
+	}
+
+	.inputGroup {
+		flex-direction: column;
+		width: 80%;
+	}
+
+	.inputAndButton {
+		width: 100%;
+	}
+
+	.contact button {
+		width: calc(100% + 2px);
+		margin-top: 20px;
+	}
+
+	.footerMain {
+		padding-top: 2rem;
+		flex-direction: column;
+		gap: 2rem;
+
+	}
+
+	.footerLeft {
+		flex-direction: column;
+		gap: 2rem;
+
+	}
+
+	.footerLeft li {
+		font-size: min(1.2rem, 5vw);
+	}
+
+	.footerRight {
+				justify-content: center;
+		gap: 2rem;
+	}
+}
+
+@media screen and (width <= 340px) {
+	.extensionMain {
+		height: unset;
+		margin-top: calc(100% + 80px);
+	}
+}
+
+@media screen and (340px < width < 440px) {
+	.extensionMain {
+		height: unset;
+		margin-top: calc(100% + 50px);
+	}
+}
+
+@media screen and (width < 510px) {
+	.tab1 {
+		margin-top: 5% !important;
+	}
+}
+
+@media screen and (510px <= width < 610px) {
+	.tab1 {
+		margin-top: 10% !important;
+	}
+}
+
+@media screen and (width < 390px) {
+	.tab2 {
+		margin-top: 0 !important;
+	}
+}
+
+@media screen and (width < 400px) {
+	.tab3 {
+		margin-top: 10% !important;
+	}
+}
+
+@media screen and (410px <= width < 440px) {
+	.tab2 {
+		margin-top: 10% !important;
+	}
+}
+
+@media screen and (400px <= width < 480px) {
+	.tab3 {
+		margin-top: 20% !important;
+	}
+}
+
+@media screen and (440px <= width < 480px) {
+	.tab2, .tab3 {
+		margin-top: 15% !important;
+	}
+}
+
+@media screen and (480px <= width < 575px) {
+	.tab2, .tab3 {
+		margin-top: 25% !important;
+	}
+}
+
+@media screen and (575px <= width < 610px) {
+	.tab2, .tab3 {
+		margin-top: 30% !important;
 	}
 }

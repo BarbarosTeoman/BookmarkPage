@@ -1,6 +1,6 @@
 export default function Tab2() {
 	return (
-		<div className="tabs" style={{ marginTop: "min(5%, 30px)" }}>
+		<div className="tabs tab2" style={{ marginTop: "min(5%, 30px)" }}>
 			<div className="tabsLeft">
 				<h1>Intelligent search</h1>
 				<p>

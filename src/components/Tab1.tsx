@@ -1,6 +1,6 @@
 export default function Tab1() {
   return (
-    <div className="tabs" style={{ marginTop: "min(8%, 80px)" }}>
+    <div className="tabs tab1" style={{ marginTop: "min(8%, 80px)" }}>
       <div className="tabsLeft">
         <h1>Bookmark in one click</h1>
         <p>
