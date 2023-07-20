@@ -854,4 +854,45 @@ details[open] div {
 		left: 50%;
 		transform: translateX(-50%);
 	}
+
+	.tabs {
+		flex-direction: column-reverse;
+		margin-top: 5% !important;
+	}
+
+	.tabsRight {
+		margin-top: 0;
+		position: relative;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.tabsRight img {
+		align-self: center;
+		padding-left: 0;
+	}
+
+	.tabsLeft {
+		width: 80%;
+		margin-top: 2rem;
+		text-align: center;
+		padding: 0;
+	}
+
+	.tabsLeft h1 {
+		font-size: min(4rem, 7vw);
+		color: var(--veryDarkBlue);
+		margin-bottom: 1rem;
+	}
+
+	.tabsLeft p {
+		font-size: min(1.1rem, 4vw);
+		margin-bottom: 1rem;
+	}
+
+	.tabsLeftButtons {
+		justify-content: center;
+		width: 100%;
+	}
 }
