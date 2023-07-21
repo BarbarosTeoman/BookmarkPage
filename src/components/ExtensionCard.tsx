@@ -1,4 +1,5 @@
 import dots from '../assets/bg-dots.svg'
+import logo from 
 
 export default function ExtensionCard(props: any) {
   return (
@@ -6,7 +7,7 @@ export default function ExtensionCard(props: any) {
       <div className="img">
         <img
           className="logo"
-          src={`src/assets/logo-${props.browser}.svg`}
+          src={`/logo-${props.browser}.svg`}
           alt=""
         />
       </div>
