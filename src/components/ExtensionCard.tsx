@@ -1,5 +1,4 @@
 import dots from '../assets/bg-dots.svg'
-import logo from 
 
 export default function ExtensionCard(props: any) {
   return (
