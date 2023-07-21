@@ -1,9 +1,11 @@
+import logoWhite from '../assets/logo-bookmark-white.svg'
+
 export default function Footer() {
   return (
     <div className="footerMain">
       <ul className="footerLeft">
         <li>
-          <img src="/src/assets/logo-bookmark-white.svg" alt="" />
+          <img src={logoWhite} alt="" />
         </li>
         <li>FEATURES</li>
         <li>PRICING</li>

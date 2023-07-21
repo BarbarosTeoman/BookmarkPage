@@ -1,4 +1,5 @@
 import { useState } from "react"
+import iconError from "../assets/icon-error.svg"
 
 export default function Contact() {
 	const [email, setEmail] = useState<string>("")
@@ -36,7 +37,7 @@ export default function Contact() {
 							<>
 								{error && (
 									<img
-										src="src\assets\icon-error.svg"
+										src={iconError}
 										alt=""
 									/>
 								)}

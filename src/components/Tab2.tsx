@@ -1,3 +1,5 @@
+import tab2 from "../assets/illustration-features-tab-2.svg"
+
 export default function Tab2() {
 	return (
 		<div className="tabs tab2" style={{ marginTop: "min(5%, 30px)" }}>
@@ -12,7 +14,7 @@ export default function Tab2() {
 				</div>
 			</div>
 			<div className="tabsRight">
-				<img src="src/assets/illustration-features-tab-2.svg" alt="" />
+				<img src={tab2} alt="" />
 				<div className="elipse" />
 			</div>
 		</div>

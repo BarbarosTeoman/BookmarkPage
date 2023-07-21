@@ -1,3 +1,5 @@
+import dots from '../assets/bg-dots.svg'
+
 export default function ExtensionCard(props: any) {
   return (
     <div className="extensionCard" id={props.id}>
@@ -12,7 +14,7 @@ export default function ExtensionCard(props: any) {
         Add to {props.browser.charAt(0).toUpperCase() + props.browser.slice(1)}
       </h4>
       <p>Minimum version {props.version}</p>
-      <img className="hr" src="src/assets/bg-dots.svg" alt="" />
+      <img className="hr" src={dots} alt="" />
       <button>Add & Install Extension</button>
     </div>
   )
